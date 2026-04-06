@@ -365,7 +365,18 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   border-color: var(--border-blue);
   background: linear-gradient(135deg, var(--bg-card) 0%, #0D1E3A 100%);
 }
-.about-icon { font-size: 24px; margin-bottom: 12px; }
+.about-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background: rgba(99, 179, 237, 0.08);
+  color: var(--accent);
+  flex-shrink: 0;
+}
 .about-card h3 {
   font-size: 16px;
   font-weight: 700;
