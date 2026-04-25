@@ -89,19 +89,19 @@ document.addEventListener("mousemove", e => {
   });
 });
 
-/* Hero headline rotator */
+/* Hero inventory rotator */
 (function () {
-  const el = document.getElementById("heroRotator");
+  const el = document.getElementById("invRotator");
   if (!el) return;
   const phrases = [
-    "regulated industries.",
-    "banks &amp; insurers.",
-    "compliance ops.",
-    "high-stakes systems.",
-    "KYC &amp; AML at scale.",
-    "agentic workflows.",
-    "audit-ready pipelines.",
-    "production, not demos."
+    "audit trails.",
+    "model drift.",
+    "the second year.",
+    "what fails silently.",
+    "the eval no one wrote.",
+    "what regulators actually read.",
+    "the cost of being wrong twice.",
+    "the boring 80% nobody demos."
   ];
   let i = 0;
   el.textContent = "";
