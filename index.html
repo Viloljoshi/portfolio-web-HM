@@ -1,287 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vilol Joshi · AI Product Manager</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vilol Joshi — Technical AI Product Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Vilol Joshi</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="#contact" class="nav-cta">Get in Touch</a>
-        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
+<div class="scroll-bar" id="scrollBar"></div>
+
+<div class="atmos">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="blob b4"></div>
+  <div class="blob cursor" id="cursorBlob"></div>
+</div>
+<div class="grain"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo"><span class="nav-mark"></span>Vilol Joshi</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta"><span>Get in Touch</span> <span>→</span></a>
+  </div>
+</nav>
+
+<main id="top">
 
   <!-- HERO -->
-  <section id="hero" class="section hero-section">
-    <div class="container container-narrow">
+  <section class="hero" id="about">
+    <div class="hero-toprow">
+      <span class="pill"><span class="pulse"></span>Open to full-time roles · Berlin / Mumbai / Remote</span>
+      <span class="pill mono">Technical AI Product Manager</span>
+    </div>
 
-      <div class="avatar" id="avatarEl" title="Click to upload photo">VJ<span class="avatar-edit-hint">EDIT</span></div>
-      <input type="file" id="avatarUpload" accept="image/*" style="display:none">
+    <h1 class="hero-title">
+      <span class="row"><span>Hi, I'm Vilol.</span></span>
+      <span class="row"><span><span class="muted">I ship</span> <span class="em">production AI</span></span></span>
+      <span class="row"><span><span class="muted">in</span> <span class="accent rotator" id="heroRotator" aria-live="polite">regulated industries.</span></span></span>
+    </h1>
 
-      <h1 class="hero-name">Vilol Joshi</h1>
-      <div class="hero-role">Technical AI Product Manager</div>
-      <p class="hero-tagline">5 years shipping production AI in banking, insurance, and compliance. Silent failures here are regulatory events, not product bugs.</p>
+    <p class="hero-sub">
+      <strong>5 years</strong> shipping production AI in <strong>banking, insurance, and compliance</strong>. Silent failures here are regulatory events, not product bugs.
+    </p>
 
-      <div class="hero-actions">
-        <a href="https://www.linkedin.com/in/viloljoshi" target="_blank" class="btn btn-primary">View LinkedIn →</a>
-        <a href="https://calendly.com/joshivilol1011/exploring-opportunities" target="_blank" class="btn btn-outline">Schedule a Call</a>
+    <div class="hero-actions">
+      <a href="https://www.linkedin.com/in/viloljoshi" target="_blank" class="btn btn-primary" data-magnetic><span>View LinkedIn</span> <span class="arrow">→</span></a>
+      <a href="https://calendly.com/joshivilol1011/exploring-opportunities" target="_blank" class="btn btn-ghost">Schedule a Call</a>
+    </div>
+
+    <div class="headline-metrics">
+      <div class="hm">
+        <div class="hm-num"><span data-count="45" data-suffix="%">0</span></div>
+        <div class="hm-label">Compliance ops reduction</div>
+        <div class="hm-ctx">Solytics Partners</div>
       </div>
-
-      <!-- Stats row -->
-      <div class="stats-row">
-        <div class="stat-card">
-          <span class="stat-num">45%</span>
-          <span class="stat-label">Compliance ops reduction</span>
-          <span class="stat-context">Solytics Partners</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">70%</span>
-          <span class="stat-label">Less manual processing</span>
-          <span class="stat-context">50K+ KYC/AML docs/month</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">54M+</span>
-          <span class="stat-label">Users reached via AI</span>
-          <span class="stat-context">Milka campaign · Ogilvy</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">$15M</span>
-          <span class="stat-label">Enterprise pipeline supported</span>
-          <span class="stat-context">Via AI architecture demos</span>
-        </div>
+      <div class="hm">
+        <div class="hm-num"><span data-count="70" data-suffix="%">0</span></div>
+        <div class="hm-label">Less manual processing</div>
+        <div class="hm-ctx">50K+ KYC/AML docs/month</div>
       </div>
+      <div class="hm">
+        <div class="hm-num"><span data-count="54" data-suffix="M+">0</span></div>
+        <div class="hm-label">Users reached via AI</div>
+        <div class="hm-ctx">Milka campaign · Ogilvy</div>
+      </div>
+      <div class="hm">
+        <div class="hm-num"><span data-count="15" data-prefix="$" data-suffix="M">0</span></div>
+        <div class="hm-label">Enterprise pipeline supported</div>
+        <div class="hm-ctx">Via AI architecture demos</div>
+      </div>
+    </div>
 
-      <!-- Companies -->
-      <div class="companies-row">
-        <span class="companies-label">Previously at</span>
-        <div class="companies-list">
-          <span>Solytics Partners</span>
-          <span>Ogilvy</span>
-          <span>Schbang</span>
-          <span>SEB Global Services</span>
-        </div>
+    <div class="marquee-wrap">
+      <div class="marquee">
+        <div class="marquee-item"><span class="marquee-dot"></span>Solytics Partners</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Ogilvy</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Schbang</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>SEB Global Services</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Banking · Insurance · Compliance</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Solytics Partners</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Ogilvy</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Schbang</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>SEB Global Services</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Banking · Insurance · Compliance</div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section about-section">
-    <div class="container">
-      <div class="section-head centered">
-        <h2 class="section-title">Why Hire Me</h2>
-        <p class="section-sub">The short version: I build AI that actually ships in environments most PMs avoid.</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-card highlight-card">
-          <div class="about-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <path d="M9 12l2 2 4-4"/>
-            </svg>
-          </div>
-          <h3>I've shipped AI in regulated environments</h3>
-          <p>Banking, insurance, and fintech: where a silent AI failure is a regulatory event. Every architecture decision I make is shaped by what happens when things go wrong at enterprise scale.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="18" cy="5" r="3"/>
-              <circle cx="6" cy="12" r="3"/>
-              <circle cx="18" cy="19" r="3"/>
-              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
-              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-            </svg>
-          </div>
-          <h3>I bridge technical and business</h3>
-          <p>I've presented AI architectures to bank CISOs, CROs, and CTOs while also writing acceptance criteria with engineers the same week. $15M in enterprise pipeline supported through technical demos.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"/>
-              <line x1="12" y1="20" x2="12" y2="4"/>
-              <line x1="6" y1="20" x2="6" y2="14"/>
-              <line x1="2" y1="20" x2="22" y2="20"/>
-            </svg>
-          </div>
-          <h3>I measure outcomes, not features</h3>
-          <p>45% compliance ops reduction. 70% less manual document work. 9% global revenue uplift. Every project I touch has quantified outcomes because impact is how I evaluate decisions.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-            </svg>
-          </div>
-          <h3>I ship, not just design</h3>
-          <p>An 80% solution running in production beats an undeployed 100% every time. I've never optimized for the cleanest demo. I optimize for what ships, what scales, and what stakeholders can trust.</p>
+  <!-- WHY HIRE ME -->
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">01 / Why Hire Me</span>
+        <div>
+          <h2 class="sec-title">The short version: I build AI that <span class="em">actually ships</span> in environments most PMs avoid.</h2>
         </div>
       </div>
 
-      <div class="about-bottom">
-        <div class="about-quote-block">
-          <blockquote>"Governance before autonomy. Agents without guardrails are just expensive bugs, especially in regulated industries."</blockquote>
-          <cite>How I approach every agentic system</cite>
-        </div>
+      <div class="why-grid">
+        <article class="why-card reveal">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></svg></div>
+          <h3 class="why-h">I've shipped AI in regulated environments</h3>
+          <p class="why-d">Banking, insurance, and fintech: where a silent AI failure is a regulatory event. Every architecture decision I make is shaped by what happens when things go wrong at enterprise scale.</p>
+        </article>
+        <article class="why-card reveal delay-1">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 7.5L11 16M16.5 7.5L13 16"/></svg></div>
+          <h3 class="why-h">I bridge technical and business</h3>
+          <p class="why-d">I've presented AI architectures to bank CISOs, CROs, and CTOs while writing acceptance criteria with engineers the same week. $15M in enterprise pipeline supported through technical demos.</p>
+        </article>
+        <article class="why-card reveal delay-2">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h4v-6H3zM10 18h4V6h-4zM17 18h4v-9h-4z"/></svg></div>
+          <h3 class="why-h">I measure outcomes, not features</h3>
+          <p class="why-d">45% compliance ops reduction. 70% less manual document work. 9% global revenue uplift. Every project I touch has quantified outcomes because impact is how I evaluate decisions.</p>
+        </article>
+        <article class="why-card reveal delay-3">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l4-8 4 6 3-3 7 11"/><path d="M3 20h18"/></svg></div>
+          <h3 class="why-h">I ship, not just design</h3>
+          <p class="why-d">An 80% solution running in production beats an undeployed 100% every time. I've never optimized for the cleanest demo. I optimize for what ships, what scales, and what stakeholders can trust.</p>
+        </article>
+      </div>
+
+      <div class="quote-card reveal">
+        <p>Governance before autonomy. Agents without guardrails are just expensive bugs, especially in regulated industries.</p>
+        <div class="qsub">How I approach every agentic system</div>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="section experience-section">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Experience</h2>
-        <p class="section-sub">Each role added a specific, compounding capability.</p>
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">02 / Experience</span>
+        <div>
+          <h2 class="sec-title">Each role added a <span class="em">specific, compounding</span> capability.</h2>
+        </div>
       </div>
 
-      <div class="timeline">
+      <div class="exp-list">
 
-        <div class="tl-item">
-          <div class="tl-left">
-            <div class="tl-dot active"></div>
-            <div class="tl-line"></div>
+        <article class="exp reveal">
+          <div class="exp-meta">
+            <span>Mar 2024 – Present</span>
+            <span class="exp-current">Current</span>
+            <span class="exp-loc">Berlin &amp; Mumbai</span>
           </div>
-          <div class="tl-body">
-            <div class="tl-top">
-              <div>
-                <span class="tl-dates">Mar 2024 – Present</span>
-                <span class="tl-pill current">Current</span>
-              </div>
-              <span class="tl-loc">Berlin &amp; Mumbai</span>
-            </div>
-            <h3 class="tl-company">Solytics Partners</h3>
-            <div class="tl-role">Technical AI Product Manager · Nimbus Platform Modernization</div>
-            <p class="tl-summary">Led the modernization of a legacy compliance platform for enterprise banks, replacing static rule-based modules with LLM-powered agentic systems that could pass enterprise security review and regulatory sign-off.</p>
-            <div class="tl-stats">
-              <div class="tl-stat"><strong>45%</strong><span>reduction in compliance review effort</span></div>
-              <div class="tl-stat"><strong>65%</strong><span>increase in UDF agent adoption</span></div>
-              <div class="tl-stat"><strong>$15M</strong><span>enterprise pipeline supported</span></div>
-            </div>
-            <ul class="tl-bullets">
-              <li>Designed agentic orchestration with strict governance model: Pre-LLM Guardrails → LLM → Post-LLM Guardrails → Tool → HITL → Verification</li>
-              <li>Fine-tuned models for KYC, credit reports, and regulatory filings, reducing false positives in compliance flags</li>
-              <li>Built OCR + LLM hybrid pipeline for high-volume document review, enabling faster enterprise client onboarding</li>
-              <li>Led AI architecture demos directly with bank CISOs, CROs, and CTOs, supporting $15M enterprise sales pipeline</li>
-              <li>Standardized third-party AML/KYC API integrations, reducing integration turnaround by 25%</li>
-            </ul>
-            <div class="tl-tags"><span>Agentic Systems</span><span>LLM Fine-tuning</span><span>KYC/AML</span><span>HITL Architecture</span><span>Enterprise Sales Support</span></div>
+          <h3 class="exp-company">Solytics Partners</h3>
+          <div class="exp-role">Technical AI Product Manager · Nimbus Platform Modernization</div>
+          <p class="exp-desc">Led the modernization of a legacy compliance platform for enterprise banks, replacing static rule-based modules with LLM-powered agentic systems that could pass enterprise security review and regulatory sign-off.</p>
+          <div class="exp-metrics">
+            <div><div class="em-num">45%</div><div class="em-label">reduction in compliance review effort</div></div>
+            <div><div class="em-num">65%</div><div class="em-label">increase in UDF agent adoption</div></div>
+            <div><div class="em-num">$15M</div><div class="em-label">enterprise pipeline supported</div></div>
           </div>
-        </div>
+          <ul class="exp-bullets">
+            <li>Designed agentic orchestration with strict governance: Pre-LLM Guardrails → LLM → Post-LLM Guardrails → Tool → HITL → Verification</li>
+            <li>Fine-tuned models for KYC, credit reports, and regulatory filings, reducing false positives in compliance flags</li>
+            <li>Built OCR + LLM hybrid pipeline for high-volume document review, enabling faster enterprise client onboarding</li>
+            <li>Led AI architecture demos directly with bank CISOs, CROs, and CTOs, supporting $15M enterprise sales pipeline</li>
+            <li>Standardized third-party AML/KYC API integrations, reducing integration turnaround by 25%</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Agentic Systems</span>
+            <span class="tag">LLM Fine-tuning</span>
+            <span class="tag">KYC/AML</span>
+            <span class="tag">HITL Architecture</span>
+            <span class="tag">Enterprise Sales Support</span>
+          </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-left">
-            <div class="tl-dot"></div>
-            <div class="tl-line"></div>
+        <article class="exp reveal">
+          <div class="exp-meta">
+            <span>Aug 2023 – Mar 2024</span>
+            <span class="exp-loc">Mumbai</span>
           </div>
-          <div class="tl-body">
-            <div class="tl-top">
-              <div><span class="tl-dates">Aug 2023 – Mar 2024</span></div>
-              <span class="tl-loc">Mumbai</span>
-            </div>
-            <h3 class="tl-company">Ogilvy</h3>
-            <div class="tl-role">AI Product Manager</div>
-            <p class="tl-summary">Owned the AI product roadmap for "Sing it with Milka", a generative AI campaign that proved AI at scale can move real revenue, not just engagement metrics.</p>
-            <div class="tl-stats">
-              <div class="tl-stat"><strong>54M+</strong><span>unique AI music generations</span></div>
-              <div class="tl-stat"><strong>9%</strong><span>global revenue uplift for Milka brand</span></div>
-              <div class="tl-stat"><strong>35%</strong><span>reduction in manual reporting effort</span></div>
-            </div>
-            <ul class="tl-bullets">
-              <li>Delivered a global AI-native campaign generating 54M+ unique user outputs, driving 9% revenue uplift</li>
-              <li>Authored user stories, acceptance criteria, and product documentation across global releases</li>
-              <li>Reduced manual reporting by 35% through automation and structured data workflows</li>
-            </ul>
-            <div class="tl-tags"><span>Generative AI</span><span>B2C Product</span><span>Campaign Technology</span><span>Data Workflows</span></div>
+          <h3 class="exp-company">Ogilvy</h3>
+          <div class="exp-role">AI Product Manager</div>
+          <p class="exp-desc">Owned the AI product roadmap for "Sing it with Milka", a generative AI campaign that proved AI at scale can move real revenue, not just engagement metrics.</p>
+          <div class="exp-metrics">
+            <div><div class="em-num">54M+</div><div class="em-label">unique AI music generations</div></div>
+            <div><div class="em-num">9%</div><div class="em-label">global revenue uplift for Milka brand</div></div>
+            <div><div class="em-num">35%</div><div class="em-label">reduction in manual reporting effort</div></div>
           </div>
-        </div>
+          <ul class="exp-bullets">
+            <li>Delivered a global AI-native campaign generating 54M+ unique user outputs, driving 9% revenue uplift</li>
+            <li>Authored user stories, acceptance criteria, and product documentation across global releases</li>
+            <li>Reduced manual reporting by 35% through automation and structured data workflows</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Generative AI</span>
+            <span class="tag">B2C Product</span>
+            <span class="tag">Campaign Technology</span>
+            <span class="tag">Data Workflows</span>
+          </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-left">
-            <div class="tl-dot"></div>
-            <div class="tl-line"></div>
+        <article class="exp reveal">
+          <div class="exp-meta">
+            <span>Oct 2022 – Aug 2024</span>
+            <span class="exp-loc">Mumbai</span>
           </div>
-          <div class="tl-body">
-            <div class="tl-top">
-              <div><span class="tl-dates">Oct 2022 – Aug 2024</span></div>
-              <span class="tl-loc">Mumbai</span>
-            </div>
-            <h3 class="tl-company">Schbang</h3>
-            <div class="tl-role">Technical Product Manager</div>
-            <p class="tl-summary">Built the first production AI for BFSI clients. Discovered that pure OCR fails on unstructured content, pure LLM hallucinates on structured tables. Hybrid pipelines with confidence scoring are the only reliable answer at volume.</p>
-            <div class="tl-stats">
-              <div class="tl-stat"><strong>70%</strong><span>reduction in manual document ops</span></div>
-              <div class="tl-stat"><strong>+18%</strong><span>conversion uplift via AI personalization</span></div>
-              <div class="tl-stat"><strong>34%</strong><span>faster time-to-market · 5M+ users</span></div>
-            </div>
-            <ul class="tl-bullets">
-              <li>Rebuilt AI document workflows handling 50K+ KYC/AML documents monthly: OCR + LLM + confidence scoring + exception routing</li>
-              <li>BPMN-aligned orchestration via n8n + Azure OCR + LLM; structured prompt pipelines eliminated hallucinations in production</li>
-              <li>Applied AI personalization to digital banking journeys: +18% conversion uplift, 12% churn reduction</li>
-              <li>Shipped digital banking apps (5M+ users) from slow-release cycles to weekly deployments, 34% faster time-to-market</li>
-            </ul>
-            <div class="tl-tags"><span>OCR + LLM Pipelines</span><span>BPMN / n8n</span><span>BFSI</span><span>AI Personalization</span></div>
+          <h3 class="exp-company">Schbang</h3>
+          <div class="exp-role">Technical Product Manager</div>
+          <p class="exp-desc">Built the first production AI for BFSI clients. Discovered that pure OCR fails on unstructured content, pure LLM hallucinates on structured tables. Hybrid pipelines with confidence scoring are the only reliable answer at volume.</p>
+          <div class="exp-metrics">
+            <div><div class="em-num">70%</div><div class="em-label">reduction in manual document ops</div></div>
+            <div><div class="em-num">+18%</div><div class="em-label">conversion uplift via AI personalization</div></div>
+            <div><div class="em-num">34%</div><div class="em-label">faster time-to-market · 5M+ users</div></div>
           </div>
-        </div>
+          <ul class="exp-bullets">
+            <li>Rebuilt AI document workflows handling 50K+ KYC/AML documents monthly: OCR + LLM + confidence scoring + exception routing</li>
+            <li>BPMN-aligned orchestration via n8n + Azure OCR + LLM; structured prompt pipelines eliminated hallucinations in production</li>
+            <li>Applied AI personalization to digital banking journeys: +18% conversion uplift, 12% churn reduction</li>
+            <li>Shipped digital banking apps (5M+ users) from slow-release cycles to weekly deployments, 34% faster time-to-market</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">OCR + LLM Pipelines</span>
+            <span class="tag">BPMN / n8n</span>
+            <span class="tag">BFSI</span>
+            <span class="tag">AI Personalization</span>
+          </div>
+        </article>
 
-        <div class="tl-item last">
-          <div class="tl-left">
-            <div class="tl-dot"></div>
+        <article class="exp reveal">
+          <div class="exp-meta">
+            <span>Jun 2019 – Oct 2021</span>
+            <span class="exp-loc">Riga</span>
           </div>
-          <div class="tl-body">
-            <div class="tl-top">
-              <div><span class="tl-dates">Jun 2019 – Oct 2021</span></div>
-              <span class="tl-loc">Riga</span>
-            </div>
-            <h3 class="tl-company">SEB Global Services</h3>
-            <div class="tl-role">Derivative Operations Specialist</div>
-            <p class="tl-summary">Compliance-heavy financial operations from the inside. These are the manual workflows that the last 5 years have been spent automating. Knowing operations before AI is what real governance expertise looks like.</p>
-            <div class="tl-stats">
-              <div class="tl-stat"><strong>150+</strong><span>reporting processes automated</span></div>
-              <div class="tl-stat"><strong>40+</strong><span>hours saved per month</span></div>
-            </div>
-            <div class="tl-tags"><span>Financial Operations</span><span>Compliance</span><span>Derivatives</span><span>Process Automation</span></div>
+          <h3 class="exp-company">SEB Global Services</h3>
+          <div class="exp-role">Derivative Operations Specialist</div>
+          <p class="exp-desc">Compliance-heavy financial operations from the inside. These are the manual workflows that the last 5 years have been spent automating. Knowing operations before AI is what real governance expertise looks like.</p>
+          <div class="exp-metrics" style="grid-template-columns: repeat(2, 1fr);">
+            <div><div class="em-num">150+</div><div class="em-label">reporting processes automated</div></div>
+            <div><div class="em-num">40+</div><div class="em-label">hours saved per month</div></div>
           </div>
-        </div>
+          <div class="exp-tags">
+            <span class="tag">Financial Operations</span>
+            <span class="tag">Compliance</span>
+            <span class="tag">Derivatives</span>
+            <span class="tag">Process Automation</span>
+          </div>
+        </article>
 
       </div>
 
-      <!-- Education -->
-      <div class="edu-bar">
-        <div class="edu-item-inline">
-          <span class="edu-icon-sm">🎓</span>
-          <span><strong>M.Sc.</strong> Business Informatics Sciences · Riga Technical University</span>
+      <div class="edu-card reveal">
+        <div class="edu-item">
+          <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 4 2 10l10 6 10-6z"/><path d="M6 12v5a6 6 0 0012 0v-5"/></svg></div>
+          <div class="edu-text">M.Sc. Business Informatics Sciences<small>Riga Technical University</small></div>
         </div>
-        <div class="edu-sep">·</div>
-        <div class="edu-item-inline">
-          <span class="edu-icon-sm">🎓</span>
-          <span><strong>B.Sc.</strong> Engineering Economics &amp; Statistics · RTU · 2022</span>
+        <div class="edu-item">
+          <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 4 2 10l10 6 10-6z"/><path d="M6 12v5a6 6 0 0012 0v-5"/></svg></div>
+          <div class="edu-text">B.Sc. Engineering Economics &amp; Statistics<small>RTU · 2022</small></div>
         </div>
-        <div class="edu-sep">·</div>
-        <div class="edu-item-inline">
-          <span class="edu-icon-sm">🌐</span>
-          <span>English C2 · Spanish C1 · German B1</span>
+        <div class="edu-item" style="grid-column: 1 / -1;">
+          <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></div>
+          <div class="edu-text">Languages<small>English C2 · Spanish C1 · German B1</small></div>
         </div>
       </div>
 
@@ -289,61 +275,127 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <div class="section-head centered">
-        <h2 class="section-title">Skills &amp; Stack</h2>
-        <p class="section-sub">Production-tested capabilities across the full AI product lifecycle.</p>
-      </div>
-
-      <div class="stack-groups">
-        <div class="sg">
-          <span class="sg-label">Gen-AI &amp; Agentic Systems</span>
-          <div class="chips">
-            <span>LLM Application Design</span><span>Agentic Workflows</span><span>Multi-Agent Orchestration</span><span>Toolchain / Function Calling</span><span>Context Engineering</span><span>RAG Pipelines</span><span>Memory &amp; Session Management</span><span>Prompt Engineering</span><span>Model Fine-Tuning</span><span>AI Guardrails &amp; Safety Layers</span><span>LLMOps</span><span>AI Governance</span>
-          </div>
-        </div>
-        <div class="sg">
-          <span class="sg-label">AI Evaluation &amp; Reliability</span>
-          <div class="chips">
-            <span>Golden Dataset Evaluation</span><span>LLM Regression Testing</span><span>Hallucination Detection</span><span>Confidence Scoring</span><span>Model Monitoring</span><span>AI Observability</span><span>Human-in-the-Loop Validation</span><span>Evaluation Framework Design</span><span>AI Telemetry</span>
-          </div>
-        </div>
-        <div class="sg">
-          <span class="sg-label">Data, Platforms &amp; Integrations</span>
-          <div class="chips">
-            <span>Python</span><span>SQL</span><span>ETL/ELT Pipelines</span><span>OCR + LLM Document Intelligence</span><span>Structured Data Extraction</span><span>REST APIs</span><span>Event-Driven Architectures</span><span>n8n Automation</span><span>Camunda BPMN</span>
-          </div>
-        </div>
-        <div class="sg">
-          <span class="sg-label">Cloud &amp; Infrastructure</span>
-          <div class="chips">
-            <span>AWS (EC2, S3)</span><span>Azure</span><span>GCP</span><span>CI/CD Pipelines</span><span>Production Deployment for AI Systems</span>
-          </div>
-        </div>
-        <div class="sg">
-          <span class="sg-label">Product &amp; Analytics</span>
-          <div class="chips">
-            <span>AI Platform Strategy</span><span>Platform Modernization</span><span>Enterprise Product Roadmaps</span><span>Technical Product Ownership</span><span>Agile/Scrum</span><span>A/B Testing</span><span>Power BI</span><span>Looker</span><span>Figma</span><span>Jira</span><span>Confluence</span>
-          </div>
+  <section class="block" id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">03 / Skills &amp; Stack</span>
+        <div>
+          <h2 class="sec-title"><span class="em">Production-tested</span> capabilities across the full AI product lifecycle.</h2>
         </div>
       </div>
 
-      <!-- Certifications -->
-      <div class="certs-section">
-        <h3 class="certs-title">Certifications</h3>
-        <div class="chips chips-certs">
-          <span>Certified Scrum Product Owner (CSPO)</span>
-          <span>Certified Business Process Analyst (CIBM, BPMN)</span>
-          <span>Google Project Management</span>
-          <span>Google Data Analytics</span>
-          <span>LangChain for LLM Applications</span>
-          <span>Vector Databases &amp; RAG Pipelines – LangChain</span>
-          <span>Prompt Engineering for LLMs</span>
-          <span>Microsoft Responsible AI (Foundations)</span>
-          <span>MLOps Fundamentals – DeepLearning.AI</span>
-          <span>AWS Cloud Practitioner (Foundational)</span>
-          <span>Product Management – Coursera</span>
+      <div class="skills-wrap reveal">
+
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <span class="skill-cat-num">3.1</span>
+            <span class="skill-cat-label">Gen-AI &amp; Agentic Systems</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM Application Design</span>
+            <span class="skill-tag">Agentic Workflows</span>
+            <span class="skill-tag">Multi-Agent Orchestration</span>
+            <span class="skill-tag">Toolchain / Function Calling</span>
+            <span class="skill-tag">Context Engineering</span>
+            <span class="skill-tag">RAG Pipelines</span>
+            <span class="skill-tag">Memory &amp; Session Management</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Model Fine-Tuning</span>
+            <span class="skill-tag">AI Guardrails &amp; Safety Layers</span>
+            <span class="skill-tag">LLMOps</span>
+            <span class="skill-tag">AI Governance</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <span class="skill-cat-num">3.2</span>
+            <span class="skill-cat-label">AI Evaluation &amp; Reliability</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Golden Dataset Evaluation</span>
+            <span class="skill-tag">LLM Regression Testing</span>
+            <span class="skill-tag">Hallucination Detection</span>
+            <span class="skill-tag">Confidence Scoring</span>
+            <span class="skill-tag">Model Monitoring</span>
+            <span class="skill-tag">AI Observability</span>
+            <span class="skill-tag">Human-in-the-Loop Validation</span>
+            <span class="skill-tag">Evaluation Framework Design</span>
+            <span class="skill-tag">AI Telemetry</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <span class="skill-cat-num">3.3</span>
+            <span class="skill-cat-label">Data, Platforms &amp; Integrations</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">ETL/ELT Pipelines</span>
+            <span class="skill-tag">OCR + LLM Document Intelligence</span>
+            <span class="skill-tag">Structured Data Extraction</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Event-Driven Architectures</span>
+            <span class="skill-tag">n8n Automation</span>
+            <span class="skill-tag">Camunda BPMN</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <span class="skill-cat-num">3.4</span>
+            <span class="skill-cat-label">Cloud &amp; Infrastructure</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS (EC2, S3)</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">Production Deployment for AI Systems</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <span class="skill-cat-num">3.5</span>
+            <span class="skill-cat-label">Product &amp; Analytics</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AI Platform Strategy</span>
+            <span class="skill-tag">Platform Modernization</span>
+            <span class="skill-tag">Enterprise Product Roadmaps</span>
+            <span class="skill-tag">Technical Product Ownership</span>
+            <span class="skill-tag">Agile/Scrum</span>
+            <span class="skill-tag">A/B Testing</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Looker</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Confluence</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="certs-card reveal">
+        <div class="skill-cat-head" style="margin-bottom: 0;">
+          <span class="skill-cat-num">3.6</span>
+          <span class="skill-cat-label">Certifications</span>
+        </div>
+        <div class="cert-tags">
+          <span class="cert-tag">Certified Scrum Product Owner (CSPO)</span>
+          <span class="cert-tag">Certified Business Process Analyst (CIBM, BPMN)</span>
+          <span class="cert-tag">Google Project Management</span>
+          <span class="cert-tag">Google Data Analytics</span>
+          <span class="cert-tag">LangChain for LLM Applications</span>
+          <span class="cert-tag">Vector Databases &amp; RAG Pipelines</span>
+          <span class="cert-tag">Prompt Engineering for LLMs</span>
+          <span class="cert-tag">Microsoft Responsible AI</span>
+          <span class="cert-tag">MLOps Fundamentals · DeepLearning.AI</span>
+          <span class="cert-tag">AWS Cloud Practitioner</span>
+          <span class="cert-tag">Product Management · Coursera</span>
         </div>
       </div>
 
@@ -351,124 +403,176 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section projects-section">
-    <div class="container">
-      <div class="section-head centered">
-        <h2 class="section-title">Selected Projects</h2>
-        <p class="section-sub">Real problems, real outcomes. Not demos. Systems that ran in production.</p>
+  <section class="block" id="projects">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">04 / Selected Projects</span>
+        <div>
+          <h2 class="sec-title">Real problems, real outcomes. <span class="em">Not demos.</span> Systems that ran in production.</h2>
+        </div>
       </div>
 
-      <div class="projects-grid">
+      <div class="proj-grid">
 
-        <div class="project-card featured-project">
-          <div class="project-label">Flagship Project</div>
-          <h3 class="project-title">Nimbus Agentic Compliance Platform</h3>
-          <p class="project-company">Solytics Partners · Mar 2024 – Present</p>
-          <p class="project-desc">Rebuilt a legacy compliance platform for enterprise banks using LLM-powered agentic orchestration. The core challenge: build AI powerful enough to automate compliance ops, but governed enough to get sign-off from bank risk and legal teams.</p>
-          <div class="project-outcomes">
-            <div class="po"><strong>45%</strong><span>compliance review effort reduced</span></div>
-            <div class="po"><strong>65%</strong><span>UDF agent adoption increase</span></div>
-            <div class="po"><strong>$15M</strong><span>enterprise sales pipeline supported</span></div>
+        <article class="proj-flagship reveal">
+          <div class="proj-flagship-text">
+            <span class="proj-eyebrow">★ Flagship Project</span>
+            <h3 class="proj-title">Nimbus <span class="em">Agentic Compliance</span> Platform</h3>
+            <div class="proj-meta">Solytics Partners · Mar 2024 – Present</div>
+            <p class="proj-desc">Rebuilt a legacy compliance platform for enterprise banks using LLM-powered agentic orchestration. The core challenge: build AI <strong>powerful enough</strong> to automate compliance ops, but <strong>governed enough</strong> to get sign-off from bank risk and legal teams.</p>
+            <div class="proj-metrics">
+              <div><div class="pm-num">45<span style="font-size:.55em">%</span></div><div class="pm-label">compliance review effort reduced</div></div>
+              <div><div class="pm-num">65<span style="font-size:.55em">%</span></div><div class="pm-label">UDF agent adoption increase</div></div>
+              <div><div class="pm-num">$15M</div><div class="pm-label">enterprise sales pipeline</div></div>
+            </div>
+            <div class="proj-cap-table">
+              <div class="pct-key">Architecture</div>
+              <div class="pct-val">6-phase governance model with Pre-LLM + Post-LLM guardrails, HITL validation, and full audit trail</div>
+              <div class="pct-key">Document AI</div>
+              <div class="pct-val">OCR + LLM hybrid with field-level confidence scoring and exception routing for KYC/AML at scale</div>
+              <div class="pct-key">Integrations</div>
+              <div class="pct-val">Standardized third-party AML/KYC API integrations, cutting turnaround by 25%</div>
+            </div>
+            <div class="exp-tags">
+              <span class="tag">Agentic AI</span>
+              <span class="tag">KYC/AML</span>
+              <span class="tag">Fine-tuning</span>
+              <span class="tag">HITL</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Enterprise</span>
+            </div>
           </div>
-          <div class="project-highlights">
-            <div class="ph"><span class="ph-title">Architecture</span><span class="ph-val">6-phase governance model with Pre-LLM + Post-LLM guardrails, HITL validation, and full audit trail</span></div>
-            <div class="ph"><span class="ph-title">Document AI</span><span class="ph-val">OCR + LLM hybrid with field-level confidence scoring and exception routing for KYC/AML at scale</span></div>
-            <div class="ph"><span class="ph-title">Integrations</span><span class="ph-val">Standardized third-party AML/KYC API integrations, cutting turnaround by 25%</span></div>
+          <div class="proj-flagship-visual">
+            <div class="v-grid"></div>
+            <div class="v-aurora"></div>
+            <svg class="v-svg" viewBox="0 0 400 340" preserveAspectRatio="none" aria-hidden="true">
+              <path class="wire" d="M 80 95 L 200 95" />
+              <path class="wire" d="M 200 95 L 320 95" />
+              <path class="wire" d="M 320 95 C 360 130, 360 180, 320 215" />
+              <path class="wire" d="M 320 215 L 200 215" />
+              <path class="wire" d="M 200 215 L 80 215" />
+              <circle class="packet p1" r="4" style="offset-path: path('M 80 95 L 200 95 L 320 95 C 360 130, 360 180, 320 215 L 200 215 L 80 215')"/>
+              <circle class="packet p2" r="4" style="offset-path: path('M 80 95 L 200 95 L 320 95 C 360 130, 360 180, 320 215 L 200 215 L 80 215')"/>
+              <circle class="packet p3" r="4" style="offset-path: path('M 80 95 L 200 95 L 320 95 C 360 130, 360 180, 320 215 L 200 215 L 80 215')"/>
+            </svg>
+            <div class="v-pipe">
+              <div class="v-pipe-row">
+                <div class="v-node" data-running="true"><span class="v-node-step">01 · Input</span><span class="v-node-name">Pre-LLM Guard</span></div>
+                <div class="v-node"><span class="v-node-step">02 · Reason</span><span class="v-node-name">LLM Core</span></div>
+                <div class="v-node"><span class="v-node-step">03 · Validate</span><span class="v-node-name">Post-LLM Guard</span></div>
+              </div>
+              <div class="v-pipe-row">
+                <div class="v-node"><span class="v-node-step">04 · Act</span><span class="v-node-name">Tool Exec</span></div>
+                <div class="v-node" data-running="true"><span class="v-node-step">05 · Review</span><span class="v-node-name">HITL Queue</span></div>
+                <div class="v-node"><span class="v-node-step">06 · Confirm</span><span class="v-node-name">Verify &amp; Log</span></div>
+              </div>
+            </div>
           </div>
-          <div class="project-tags"><span>Agentic AI</span><span>KYC/AML</span><span>Fine-tuning</span><span>HITL</span><span>RAG</span><span>Enterprise</span></div>
+        </article>
+
+        <div class="proj-row">
+          <article class="proj-card reveal">
+            <h3 class="proj-title">KYC/AML Document <span class="em">Intelligence</span> Pipeline</h3>
+            <div class="proj-meta">Schbang · 2022–2024</div>
+            <p class="proj-desc">Rebuilt document processing workflows handling 50K+ KYC/AML documents monthly. Pure OCR failed on unstructured content. Pure LLM hallucinated on tables. The hybrid approach with confidence scoring was the only production-viable answer.</p>
+            <div class="proj-metrics" style="grid-template-columns: repeat(2, 1fr);">
+              <div><div class="pm-num">70<span style="font-size:.55em">%</span></div><div class="pm-label">manual document ops reduction</div></div>
+              <div><div class="pm-num">50K+</div><div class="pm-label">documents processed monthly</div></div>
+            </div>
+            <div class="exp-tags">
+              <span class="tag">OCR + LLM</span>
+              <span class="tag">Confidence Scoring</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Azure OCR</span>
+              <span class="tag">BPMN</span>
+            </div>
+          </article>
+
+          <article class="proj-card reveal delay-1">
+            <h3 class="proj-title">Sing it with <span class="em">Milka</span>: AI Campaign at Scale</h3>
+            <div class="proj-meta">Ogilvy · 2023–2024</div>
+            <p class="proj-desc">AI-native global campaign generating 54M+ unique music outputs for the Milka chocolate brand. Proved that generative AI at scale can drive real revenue uplift, not just engagement metrics.</p>
+            <div class="proj-metrics" style="grid-template-columns: repeat(2, 1fr);">
+              <div><div class="pm-num">54M+</div><div class="pm-label">unique AI generations</div></div>
+              <div><div class="pm-num">9<span style="font-size:.55em">%</span></div><div class="pm-label">global revenue uplift</div></div>
+            </div>
+            <div class="exp-tags">
+              <span class="tag">Generative AI</span>
+              <span class="tag">B2C</span>
+              <span class="tag">Scale</span>
+              <span class="tag">Personalization</span>
+            </div>
+          </article>
         </div>
 
-        <div class="project-card">
-          <h3 class="project-title">KYC/AML Document Intelligence Pipeline</h3>
-          <p class="project-company">Schbang · 2022–2024</p>
-          <p class="project-desc">Rebuilt document processing workflows handling 50K+ KYC/AML documents monthly. Pure OCR failed on unstructured content. Pure LLM hallucinated on tables. The hybrid approach with confidence scoring was the only production-viable answer.</p>
-          <div class="project-outcomes">
-            <div class="po"><strong>70%</strong><span>reduction in manual document ops</span></div>
-            <div class="po"><strong>50K+</strong><span>documents processed monthly</span></div>
+        <article class="proj-card reveal">
+          <h3 class="proj-title">Digital Banking <span class="em">AI Personalization</span></h3>
+          <div class="proj-meta">Schbang · 2022–2024</div>
+          <p class="proj-desc">Applied AI personalization to digital banking journeys for a 5M+ user platform. Shifted product delivery from slow-release cycles to weekly deployments while adding AI-driven personalization that measurably improved conversion and retention.</p>
+          <div class="proj-metrics">
+            <div><div class="pm-num">+18<span style="font-size:.55em">%</span></div><div class="pm-label">conversion uplift</div></div>
+            <div><div class="pm-num">12<span style="font-size:.55em">%</span></div><div class="pm-label">churn reduction</div></div>
+            <div><div class="pm-num">34<span style="font-size:.55em">%</span></div><div class="pm-label">faster time-to-market</div></div>
           </div>
-          <div class="project-tags"><span>OCR + LLM</span><span>Confidence Scoring</span><span>n8n</span><span>Azure OCR</span><span>BPMN</span></div>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title">Sing it with Milka: AI Campaign at Scale</h3>
-          <p class="project-company">Ogilvy · 2023–2024</p>
-          <p class="project-desc">AI-native global campaign generating 54M+ unique music outputs for the Milka chocolate brand. Proved that generative AI at scale can drive real revenue uplift, not just engagement metrics.</p>
-          <div class="project-outcomes">
-            <div class="po"><strong>54M+</strong><span>unique AI generations</span></div>
-            <div class="po"><strong>9%</strong><span>global revenue uplift</span></div>
+          <div class="exp-tags">
+            <span class="tag">AI Personalization</span>
+            <span class="tag">BFSI</span>
+            <span class="tag">5M+ Users</span>
+            <span class="tag">Agile</span>
           </div>
-          <div class="project-tags"><span>Generative AI</span><span>B2C</span><span>Scale</span><span>Personalization</span></div>
-        </div>
-
-        <div class="project-card">
-          <h3 class="project-title">Digital Banking AI Personalization</h3>
-          <p class="project-company">Schbang · 2022–2024</p>
-          <p class="project-desc">Applied AI personalization to digital banking journeys for a 5M+ user platform. Shifted product delivery from slow-release cycles to weekly deployments while adding AI-driven personalization that measurably improved conversion and retention.</p>
-          <div class="project-outcomes">
-            <div class="po"><strong>+18%</strong><span>conversion uplift</span></div>
-            <div class="po"><strong>12%</strong><span>churn reduction</span></div>
-            <div class="po"><strong>34%</strong><span>faster time-to-market</span></div>
-          </div>
-          <div class="project-tags"><span>AI Personalization</span><span>BFSI</span><span>5M+ Users</span><span>Agile</span></div>
-        </div>
+        </article>
 
       </div>
 
-      <div class="projects-cta-row">
-        <a href="https://www.notion.so/21453237098280fdbd6cddf1848c6c35?v=21453237098281468391000cf1b9581b" target="_blank" class="btn btn-outline">View Full AI Portfolio →</a>
+      <div class="proj-cta-wrap reveal">
+        <a href="https://www.notion.so/21453237098280fdbd6cddf1848c6c35?v=21453237098281468391000cf1b9581b" target="_blank" class="btn btn-ghost">View Full AI Portfolio <span class="arrow">→</span></a>
       </div>
-
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section contact-section">
-    <div class="container container-narrow">
-      <div class="contact-block">
-        <h2 class="contact-title">Let's connect.</h2>
-        <p class="contact-sub">I work on AI products end-to-end, from architecture decisions with engineers to roadmap sign-off with stakeholders. If you want to talk shop or explore something together, reach out.</p>
+  <section class="block" id="contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <div class="contact-head">
+          <h2 class="contact-big">Let's <em>connect.</em></h2>
+          <p class="contact-desc">I work on AI products end-to-end, from architecture decisions with engineers to roadmap sign-off with stakeholders. If you want to talk shop or explore something together, reach out.</p>
+        </div>
 
-        <div class="contact-links">
-          <a href="https://calendly.com/joshivilol1011/exploring-opportunities" target="_blank" class="contact-link primary-link">
-            <span class="cl-icon">📅</span>
-            <div>
-              <div class="cl-title">Schedule a 30-min call</div>
-              <div class="cl-sub">Calendly · pick a time that works</div>
-            </div>
+        <div class="contact-list">
+          <a href="https://calendly.com/joshivilol1011/exploring-opportunities" target="_blank" class="contact-link">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></div>
+            <div class="contact-title">Schedule a 30-min call</div>
+            <div class="contact-meta">Calendly · pick a time that works</div>
           </a>
           <a href="mailto:joshivilol1011@gmail.com" class="contact-link">
-            <span class="cl-icon">✉️</span>
-            <div>
-              <div class="cl-title">joshivilol1011@gmail.com</div>
-              <div class="cl-sub">Email · usually respond same day</div>
-            </div>
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg></div>
+            <div class="contact-title">joshivilol1011@gmail.com</div>
+            <div class="contact-meta">Email · usually respond same day</div>
           </a>
           <a href="https://www.linkedin.com/in/viloljoshi" target="_blank" class="contact-link">
-            <span class="cl-icon">💼</span>
-            <div>
-              <div class="cl-title">LinkedIn</div>
-              <div class="cl-sub">linkedin.com/in/viloljoshi</div>
-            </div>
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v8M8 7v.01M12 18v-5a2.5 2.5 0 015 0v5M12 13v5"/></svg></div>
+            <div class="contact-title">LinkedIn</div>
+            <div class="contact-meta">linkedin.com/in/viloljoshi</div>
           </a>
         </div>
 
-        <div class="contact-note">
-          <p>Currently based between <strong>Berlin</strong> and <strong>Mumbai</strong>. Work across remote and hybrid setups.</p>
-        </div>
+        <p class="loc-note">Currently based between <strong>Berlin</strong> and <strong>Mumbai</strong>. Work across remote and hybrid setups.</p>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
+    <div class="wrap">
       <div class="footer-inner">
-        <span class="footer-name">Vilol Joshi · Technical AI Product Manager</span>
-        <span class="footer-note">Open to full-time roles · Berlin / Mumbai / Remote</span>
+        <span>© 2026 Vilol Joshi · Technical AI Product Manager</span>
+        <span>Open to full-time roles · Berlin / Mumbai / Remote</span>
       </div>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+</main>
+
+<script src="main.js"></script>
 </body>
 </html>
